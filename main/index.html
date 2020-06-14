@@ -76,9 +76,9 @@
   <div id="skills" class="skills">
     <div class="container max-width-lg padding-y-xxl">
       <div class="text-center">
-        <p>Need a fast and simple contact website you are willing to update once a year?</p>
+        <p>Need a simple contact website you are willing to update once a year?</p>
         <p class="margin-bottom-xs margin-bottom-md@md">I can make you a static web page with custom design and support services.</p>
-        <p class="margin-bottom-xs margin-bottom-md@md">Have an API and need a fast SPA? Just as simple with ReactJS</p>
+        <p class="margin-bottom-xs margin-bottom-md@md">Have an API and need a fast SPA? Just as simple with ReactJS.</p>
         <p>Have an idea of whole new product? Contact me and we will discuss about creating RESTful API or full-stack web system.</p>
         <p>(With ASP.NET Core, Azure and SQL database.)</p>        
       </div>
@@ -223,7 +223,7 @@
     </div>
   </section>
   
-  <section id="contactme" class="contact padding-y-xxl">
+  <section id="contactme" class="contact padding-y-xxl text-center text-left@md">
     <div class="container max-width-lg">
       <div class="container max-width-adaptive-lg">
         <div class="grid gap-md items-center">
@@ -281,7 +281,7 @@
     </div>
   </section>
 
-  <footer class="main-footer padding-top-xxl">
+  <footer class="main-footer padding-top-xxl text-center text-left@md">
     <div class="container max-width-lg">
       <div class="grid gap-lg">
         <div class="col-2@lg order-2@lg">
@@ -300,9 +300,9 @@
           
         </div>
         
-        <nav class="col-9@lg order-1@lg">
+        <nav class="col-12@lg order-1@lg">
           <ul class="grid gap-lg">
-            <li class="col-6@xs col-4@md">
+            <li class="col-12@xs col-4@md">
               <h4 class="margin-bottom-sm text-base@md">Site</h4>
               <ul class="grid gap-xs text-sm@md">
                 <li><a href="#skills" class="main-footer__link">About me</a></li>
@@ -311,7 +311,7 @@
               </ul>
             </li>
   
-            <li class="col-6@xs col-4@md">
+            <li class="col-12@xs col-4@md">
               <h4 class="margin-bottom-sm text-base@md">Portfolio</h4>
               <ul class="grid gap-xs text-sm@md">
                 <li><a href="https://warehouse-management.netlify.app" class="main-footer__link" target="_blank">Warehouse management</a></li>
@@ -320,7 +320,7 @@
               </ul>
             </li>
   
-            <li class="col-6@xs col-4@md">
+            <li class="col-12@xs col-4@md">
               <h4 class="margin-bottom-sm text-base@md">Contact me</h4>
               <ul class="grid gap-xs text-sm@md">
                 <li>
@@ -346,10 +346,8 @@
     
       <div class="main-footer__colophon border-top padding-top-xs margin-top-lg">
         <div class="text-sm text-xs@md color-contrast-medium flex flex-wrap gap-xs">
-          <span>&copy;</span>
-          <span id="year"></span>
+          <span>&copy;</span><span id="year" style="margin-left: 0;"></span>
           <a href="https://elvyra.github.io" class="color-contrast-high">elvyra.github.io</a>
-          
         </div>
       </div>
     </div>
@@ -358,7 +356,8 @@
   <script>
     document.getElementById("year").innerText = new  Date().getFullYear();
 
-    function loadMore() {
+    function loadMore() 
+    {
       let list = Array.from(document.getElementsByClassName("portfolio-item is-hidden"));
       if (list.length > 0) 
       {

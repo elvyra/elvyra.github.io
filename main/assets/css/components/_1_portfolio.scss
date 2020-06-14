@@ -1,0 +1,20 @@
+.portfolio {
+  & > :nth-child(even) {
+    & .grid {
+      & > :first-child {
+        order: 2;
+      }
+      & > :last-child {
+        order: 1;
+      }
+    }
+  }
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,48 @@
+/* -------------------------------- 
+
+File#: _1_main-footer
+Title: Main Footer
+Descr: Footer navigation
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.main-footer {
+  position: relative;
+  z-index: 1;
+
+  .socials li {
+    display: inline;
+  }
+}
+
+.main-footer__logo {
+  height: 30px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  text-decoration: none;
+
+  & > * {
+    line-height: 3rem;
+    vertical-align: middle;
+  }
+}
+
+.main-footer__link {
+  color: var(--color-contrast-medium);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-contrast-high);
+    text-decoration: underline;
+  }
+}
+
+// colophon
+.main-footer__colophon {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

@@ -13,16 +13,16 @@ Usage: codyhouse.co/license
 }
 
 .main-footer__logo {
-  flex-shrink: 0;
-  width: 104px; // logo width
-  height: 30px; // logo height
+  height: 30px;
   display: block;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  text-decoration: none;
 
-  svg,
-  img {
-    display: block;
-    width: inherit;
-    height: inherit;
+  & > * {
+    line-height: 3rem;
+    vertical-align: middle;
   }
 }
 

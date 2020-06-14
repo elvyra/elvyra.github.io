@@ -8125,10 +8125,13 @@ Usage: codyhouse.co/license
       flex-shrink: 0;
 }
 
-.header__logo a,
-.header__logo svg,
-.header__logo img {
-  display: block;
+.header__logo a {
+  text-decoration: none;
+}
+
+.header__logo a > * {
+  line-height: 3rem;
+  vertical-align: middle;
 }
 
 .header__nav {
@@ -8376,18 +8379,18 @@ Usage: codyhouse.co/license
 }
 
 .main-footer__logo {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 104px;
   height: 30px;
   display: block;
+  position: relative;
+  z-index: 2;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-decoration: none;
 }
 
-.main-footer__logo svg,
-.main-footer__logo img {
-  display: block;
-  width: inherit;
-  height: inherit;
+.main-footer__logo > * {
+  line-height: 3rem;
+  vertical-align: middle;
 }
 
 .main-footer__link {

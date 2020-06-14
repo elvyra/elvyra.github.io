@@ -1,4 +1,11 @@
+@use 'animation';
+
 .portfolio {
+  & > * {
+    animation-name: show;
+    animation-duration: 1.2s;
+  }
+
   & > :nth-child(even) {
     & .grid {
       & > :first-child {

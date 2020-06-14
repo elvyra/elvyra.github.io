@@ -8080,14 +8080,6 @@ h4 {
   cursor: not-allowed;
 }
 
-/* -------------------------------- 
-
-File#: _1_header
-Title: Main Header
-Descr: Accessible website navigation
-Usage: codyhouse.co/license
-
--------------------------------- */
 :root {
   --header-height: 50px;
 }
@@ -8345,14 +8337,7 @@ html:not(.js) .header__nav-inner {
   }
 }
 
-/* -------------------------------- 
-
-File#: _1_hero
-Title: Hero
-Descr: A full-width callout section
-Usage: codyhouse.co/license
-
--------------------------------- */
+@use "animation";
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -8370,14 +8355,6 @@ Usage: codyhouse.co/license
   z-index: 1;
 }
 
-/* -------------------------------- 
-
-File#: _1_main-footer
-Title: Main Footer
-Descr: Footer navigation
-Usage: codyhouse.co/license
-
--------------------------------- */
 .main-footer {
   position: relative;
   z-index: 1;
@@ -8423,14 +8400,6 @@ Usage: codyhouse.co/license
       flex-wrap: wrap;
 }
 
-/* -------------------------------- 
-
-File#: _1_socials
-Title: Socials
-Descr: Section with links to social media accounts
-Usage: codyhouse.co/license
-
--------------------------------- */
 .socials__btns li {
   display: inline-block;
 }
@@ -8478,6 +8447,14 @@ Usage: codyhouse.co/license
   fill: var(--color-contrast-medium);
 }
 
+@use 'animation';
+.portfolio > * {
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
 .portfolio > :nth-child(even) .grid > :first-child {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -8496,5 +8473,27 @@ Usage: codyhouse.co/license
 
 .portfolio > :last-child {
   margin-bottom: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

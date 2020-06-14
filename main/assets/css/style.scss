@@ -9,4 +9,9 @@
 
 @import "base";
 @import "custom-style";
-@import "components/**/*.scss";
+@import "components/1_header";
+@import "components/1_hero";
+@import "components/1_main-footer";
+@import "components/1_socials";
+@import "components/_1_skills_logos";
+@import "components/1_portfolio";

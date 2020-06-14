@@ -107,7 +107,7 @@
   </div>
 
   <section id="portfolio" class="portfolio padding-y-xxl">
-    <div class="position-relative z-index-1 margin-y-xxl">
+    <div class="portfolio-item z-index-1 margin-y-xxl">
       <div class="container max-width-adaptive-lg">
         <div class="grid gap-md items-center">
           <div class="col-6@md">
@@ -135,7 +135,7 @@
       </div>
     </div>
 
-    <div class="position-relative z-index-1 margin-y-xxl">
+    <div class="portfolio-item is-hidden position-relative z-index-1 margin-y-xxl">
       <div class="container max-width-adaptive-lg">
         <div class="grid gap-md items-center">
           <div class="col-6@md">
@@ -163,7 +163,7 @@
       </div>
     </div>
 
-    <div class="position-relative z-index-1 margin-y-xxl">
+    <div class="portfolio-item is-hidden position-relative z-index-1 margin-y-xxl">
       <div class="container max-width-adaptive-lg">
         <div class="grid gap-md items-center">
           <div class="col-6@md">
@@ -189,6 +189,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container max-width-adaptive-lg text-center">
+        <button class="btn" id="portfolio-loadMore" onclick="loadMore()">Load more</button>
     </div>
   </section>
   
@@ -310,6 +313,19 @@
     </div>
   </footer>
 
+  <script>
+    function loadMore() {
+      let list = Array.from(document.getElementsByClassName("portfolio-item is-hidden"));
+      if (list.length > 0) 
+      {
+        list[0].classList.remove("is-hidden");
+      }
+      if (list.length <= 1)
+      {
+        document.getElementById("portfolio-loadMore").style.display = "none";
+      }
+    }
+  </script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>

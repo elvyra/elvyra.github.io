@@ -76,11 +76,6 @@
 
   <div id="skills" class="skills">
     <div class="container max-width-lg padding-y-xxl">
-      <!--
-        <div class="text-component text-center">
-         <p>Portfolio projects done with</p>
-        </div>
-      -->
       <div class="text-center">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum reiciendis vel dolor nemo vero et consectetur, laborum, fuga ipsam iure numquam commodi, adipisci ratione doloremque nam iusto aliquam saepe. Obcaecati!</p>
       </div>
@@ -232,7 +227,8 @@
           <div class="col-6@md">
             <div class="text-component">
               <h2>Contact me</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rem neque doloribus impedit explicabo minus laborum cupiditate atque esse consectetur.</p>
+              <p>Have the great idea or a question? Contact me. I'm open for projects or job offers.</p>
+              
             </div>
 
             <section class="socials margin-top-md">
@@ -254,25 +250,32 @@
                       <svg class="icon block" viewBox="0 0 16 16"><title>Follow me on Github</title><g><path  d="M8,0.2c-4.4,0-8,3.6-8,8c0,3.5,2.3,6.5,5.5,7.6 C5.9,15.9,6,15.6,6,15.4c0-0.2,0-0.7,0-1.4C3.8,14.5,3.3,13,3.3,13c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5 c0.8,0.1,1.2,0.8,1.2,0.8C4.4,13.4,5.6,13,6,12.8c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.6-0.9-3.6-4c0-0.9,0.3-1.6,0.8-2.1 c-0.1-0.2-0.4-1,0.1-2.1c0,0,0.7-0.2,2.2,0.8c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.4,0.1,2,0.3c1.5-1,2.2-0.8,2.2-0.8 c0.4,1.1,0.2,1.9,0.1,2.1c0.5,0.6,0.8,1.3,0.8,2.1c0,3.1-1.9,3.7-3.7,3.9C9.7,12,10,12.5,10,13.2c0,1.1,0,1.9,0,2.2 c0,0.2,0.1,0.5,0.6,0.4c3.2-1.1,5.5-4.1,5.5-7.6C16,3.8,12.4,0.2,8,0.2z"></path></g></svg>
                     </a>
                   </li>
+                  <li>
+                    <a href="mailto:elvyra.sabaliauskiene@gmail.com">
+                      <svg class="icon block"  viewBox="0 0 1000 1000"><title>Email me: elvyra.sabaliauskiene@gmail.com</title>
+                      <g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M1232.5,3694.7c-465.2-26.9-813.1-253.7-1016.8-665.1c-123-248-119.2-107.6-113.4-2979.4l5.8-2610.3l51.9-144.2c124.9-340.2,403.7-617,742-734.3l128.8-44.2h3979h3979l132.6,51.9c349.8,142.2,601.6,397.9,726.6,745.8l44.2,125l5.8,2610.3c5.8,2871.8,9.6,2733.4-113.4,2983.3c-155.7,317.2-438.3,545.9-782.3,634.3c-109.6,28.8-486.3,32.7-3844.4,34.6C3110.5,3704.3,1344,3700.4,1232.5,3694.7z M8419.6,2779.7c-1.9-26.9-3337-2379.7-3367.7-2377.8C5025,403.9,1886,2766.2,1886,2785.5c0,3.8,1470.5,7.7,3267.7,7.7C6951,2793.2,8421.5,2787.4,8419.6,2779.7z M3024,765.2C4121.6-65.2,5026.9-743.7,5036.5-743.7c11.5,0,899.6,626.7,1976,1389.8l1956.8,1391.7l5.8-2222.1c3.8-2122.1,1.9-2224-30.8-2268.2c-19.2-26.9-59.6-65.4-88.4-86.5l-51.9-40.4H5000H1196l-51.9,40.4c-28.8,21.1-71.1,63.4-92.3,92.3c-40.4,51.9-40.4,63.4-46.1,2387.4c-1.9,1284,1.9,2333.6,9.6,2333.6C1024.9,2274.2,1928.3,1595.6,3024,765.2z"/></g></g>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
             </section>
           </div>
         
           <div class="col-6@md">
-            <form>
+            <form action="https://formspree.io/xlepnaoj" method="POST">
               <fieldset class="margin-bottom-md">
                 <div class="grid gap-sm">
                   <div>
-                    <input class="form-control width-100%" type="email" name="inputEmail" id="inputEmail" placeholder="Your email">
+                    <input class="form-control width-100%" type="email" name="_replyto" placeholder="Your email">
                   </div>
                   <div>
-                    <textarea class="form-control width-100%" name="textarea" id="textarea" placeholder="Your message" rows="3"></textarea>
+                    <textarea class="form-control width-100%" name="message" placeholder="Your message" rows="3"></textarea>
                   </div>
                 </div>
               </fieldset>
             
               <div>
-                <button class="btn btn--primary">Submit</button>
+                <button class="btn btn--primary" type="submit" value="Send">Send</button>
               </div>
             </form>
           </div>
@@ -284,42 +287,60 @@
   <footer class="main-footer padding-top-xxl">
     <div class="container max-width-lg">
       <div class="grid gap-lg">
-        <div class="col-3@lg order-2@lg flex@lg justify-end@lg">
-          <a href="#" class="main-footer__logo">            
-            <svg height="30" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title>Elvyra - web developer</title>
-              <path d="M170 340C124.913 340 81.673 322.089 49.7918 290.208C17.9107 258.327 -1.25423e-06 215.087 0 170C1.25423e-06 124.913 17.9107 81.673 49.7918 49.7918C81.673 17.9107 124.913 -5.37655e-07 170 0L170 74.9526C144.792 74.9526 120.616 84.9665 102.791 102.791C84.9665 120.616 74.9526 144.792 74.9526 170C74.9526 195.208 84.9665 219.384 102.791 237.209C120.616 255.033 144.792 265.047 170 265.047L170 340Z" fill="#657ED4"/>
-              <rect x="170" width="163" height="75" fill="#657ED4"/>
-              <rect x="170" y="265" width="163" height="75" fill="#657ED4"/>
-              <rect x="163" y="133" width="170" height="75" fill="#FF331F"/>
-            </svg> 
-            <span class="color-black">elvyra.github.io</span>
-          </a>
+        <div class="col-2@lg order-2@lg">
+          <div>
+            <a href="#" class="main-footer__logo">            
+              <svg height="30" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Elvyra - web developer</title>
+                <path d="M170 340C124.913 340 81.673 322.089 49.7918 290.208C17.9107 258.327 -1.25423e-06 215.087 0 170C1.25423e-06 124.913 17.9107 81.673 49.7918 49.7918C81.673 17.9107 124.913 -5.37655e-07 170 0L170 74.9526C144.792 74.9526 120.616 84.9665 102.791 102.791C84.9665 120.616 74.9526 144.792 74.9526 170C74.9526 195.208 84.9665 219.384 102.791 237.209C120.616 255.033 144.792 265.047 170 265.047L170 340Z" fill="#657ED4"/>
+                <rect x="170" width="163" height="75" fill="#657ED4"/>
+                <rect x="170" y="265" width="163" height="75" fill="#657ED4"/>
+                <rect x="163" y="133" width="170" height="75" fill="#FF331F"/>
+              </svg> 
+              <span class="color-black">elvyra.github.io</span>
+            </a>
+          </div>
+          
         </div>
         
         <nav class="col-9@lg order-1@lg">
           <ul class="grid gap-lg">
             <li class="col-6@xs col-4@md">
-              <h4 class="margin-bottom-sm text-base@md">About me</h4>
+              <h4 class="margin-bottom-sm text-base@md">Site</h4>
               <ul class="grid gap-xs text-sm@md">
-                <li><a href="#0" class="main-footer__link">Pricing</a></li>
-                <li><a href="#0" class="main-footer__link">Teams</a></li>
+                <li><a href="#skills" class="main-footer__link">About me</a></li>
+                <li><a href="#portfolio" class="main-footer__link">Portfolio</a></li>
+                <li><a href="#contactme" class="main-footer__link">Contact me</a></li>
               </ul>
             </li>
   
             <li class="col-6@xs col-4@md">
               <h4 class="margin-bottom-sm text-base@md">Portfolio</h4>
               <ul class="grid gap-xs text-sm@md">
-                <li><a href="#0" class="main-footer__link">Documentation</a></li>
-                <li><a href="#0" class="main-footer__link">API reference</a></li>
+                <li><a href="https://warehouse-management.netlify.app" class="main-footer__link" target="_blank">Warehouse management</a></li>
+                <li><a href="https://todolist-pixelperfect.netlify.app" class="main-footer__link" target="_blank">To do list</a></li>
+                <li><a href="https://booklist-plain-js.netlify.app" class="main-footer__link" target="_blank">Book list</a></li>
               </ul>
             </li>
   
             <li class="col-6@xs col-4@md">
               <h4 class="margin-bottom-sm text-base@md">Contact me</h4>
               <ul class="grid gap-xs text-sm@md">
-                <li><a href="#0" class="main-footer__link">Tutorials</a></li>
-                <li><a href="#0" class="main-footer__link">Docs</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/elvyra-sabaliauskiene" class="main-footer__link" target="_blank">            
+                    LinkedIn
+                  </a>
+                </li> 
+                <li>
+                  <a href="https://github.com/elvyra" class="main-footer__link" target="_blank">
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:elvyra.sabaliauskiene@gmail.com" class="main-footer__link">
+                    Email
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -329,27 +350,17 @@
       <div class="main-footer__colophon border-top padding-top-xs margin-top-lg">
         <div class="text-sm text-xs@md color-contrast-medium flex flex-wrap gap-xs">
           <span>&copy;</span>
+          <span id="year"></span>
           <a href="https://elvyra.github.io" class="color-contrast-high">elvyra.github.io</a>
-        </div>
-  
-        <div class="flex items-center gap-xs">
-          <a href="https://www.linkedin.com/in/elvyra-sabaliauskiene" class="main-footer__social" target="_blank">            
-            <svg class="icon block"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Contact me on LinkedIn</title><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
-          </a>
-          <!--
-          <a href="http://elvyra.slack.com" class="main-footer__social" target="_blank">
-            <svg class="icon block" viewBox="0 0 32 32"><title>Join my Slack workspace</title><rect x="17" y="1" width="6" height="14" rx="3"></rect><rect x="1" y="9" width="14" height="6" rx="3"></rect><rect x="17" y="17" width="14" height="6" rx="3"></rect><rect x="9" y="17" width="6" height="14" rx="3"></rect><path d="M12,1a3,3,0,0,0,0,6h3V4A3,3,0,0,0,12,1Z"></path><path d="M1,20a3,3,0,0,0,6,0V17H4A3,3,0,0,0,1,20Z"></path><path d="M31,12a3,3,0,0,0-6,0v3h3A3,3,0,0,0,31,12Z"></path><path d="M20,31a3,3,0,0,0,0-6H17v3A3,3,0,0,0,20,31Z"></path></svg>
-          </a>
-          -->
-          <a href="https://github.com/elvyra" class="main-footer__social" target="_blank">
-            <svg class="icon block" viewBox="0 0 16 16"><title>Follow me on Github</title><g><path  d="M8,0.2c-4.4,0-8,3.6-8,8c0,3.5,2.3,6.5,5.5,7.6 C5.9,15.9,6,15.6,6,15.4c0-0.2,0-0.7,0-1.4C3.8,14.5,3.3,13,3.3,13c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5 c0.8,0.1,1.2,0.8,1.2,0.8C4.4,13.4,5.6,13,6,12.8c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.6-0.9-3.6-4c0-0.9,0.3-1.6,0.8-2.1 c-0.1-0.2-0.4-1,0.1-2.1c0,0,0.7-0.2,2.2,0.8c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.4,0.1,2,0.3c1.5-1,2.2-0.8,2.2-0.8 c0.4,1.1,0.2,1.9,0.1,2.1c0.5,0.6,0.8,1.3,0.8,2.1c0,3.1-1.9,3.7-3.7,3.9C9.7,12,10,12.5,10,13.2c0,1.1,0,1.9,0,2.2 c0,0.2,0.1,0.5,0.6,0.4c3.2-1.1,5.5-4.1,5.5-7.6C16,3.8,12.4,0.2,8,0.2z"></path></g></svg>
-          </a>
+          
         </div>
       </div>
     </div>
   </footer>
 
   <script>
+    document.getElementById("year").innerText = new  Date().getFullYear();
+
     function loadMore() {
       let list = Array.from(document.getElementsByClassName("portfolio-item is-hidden"));
       if (list.length > 0) 

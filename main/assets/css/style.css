@@ -8378,6 +8378,10 @@ Usage: codyhouse.co/license
   z-index: 1;
 }
 
+.main-footer .socials li {
+  display: inline;
+}
+
 .main-footer__logo {
   height: 30px;
   display: block;
@@ -8412,16 +8416,6 @@ Usage: codyhouse.co/license
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.main-footer__social {
-  text-decoration: none;
-  display: inline-block;
-  color: var(--color-contrast-medium);
-}
-
-.main-footer__social:hover {
-  color: var(--color-contrast-high);
 }
 
 /* -------------------------------- 

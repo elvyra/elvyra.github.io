@@ -8080,14 +8080,6 @@ h4 {
   cursor: not-allowed;
 }
 
-/* -------------------------------- 
-
-File#: _1_header
-Title: Main Header
-Descr: Accessible website navigation
-Usage: codyhouse.co/license
-
--------------------------------- */
 :root {
   --header-height: 50px;
 }
@@ -8345,14 +8337,6 @@ html:not(.js) .header__nav-inner {
   }
 }
 
-/* -------------------------------- 
-
-File#: _1_hero
-Title: Hero
-Descr: A full-width callout section
-Usage: codyhouse.co/license
-
--------------------------------- */
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -8370,14 +8354,6 @@ Usage: codyhouse.co/license
   z-index: 1;
 }
 
-/* -------------------------------- 
-
-File#: _1_main-footer
-Title: Main Footer
-Descr: Footer navigation
-Usage: codyhouse.co/license
-
--------------------------------- */
 .main-footer {
   position: relative;
   z-index: 1;
@@ -8423,14 +8399,6 @@ Usage: codyhouse.co/license
       flex-wrap: wrap;
 }
 
-/* -------------------------------- 
-
-File#: _1_socials
-Title: Socials
-Descr: Section with links to social media accounts
-Usage: codyhouse.co/license
-
--------------------------------- */
 .socials__btns li {
   display: inline-block;
 }
@@ -8496,5 +8464,9 @@ Usage: codyhouse.co/license
 
 .portfolio > :last-child {
   margin-bottom: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */

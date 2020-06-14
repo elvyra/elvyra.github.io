@@ -27,10 +27,14 @@ Usage: codyhouse.co/license
 }
 
 .header__container {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 // logo

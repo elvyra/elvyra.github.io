@@ -8337,6 +8337,7 @@ html:not(.js) .header__nav-inner {
   }
 }
 
+@use "animation";
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -8446,6 +8447,14 @@ html:not(.js) .header__nav-inner {
   fill: var(--color-contrast-medium);
 }
 
+@use 'animation';
+.portfolio > * {
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
 .portfolio > :nth-child(even) .grid > :first-child {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -8468,5 +8477,23 @@ html:not(.js) .header__nav-inner {
 
 html {
   scroll-behavior: smooth;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

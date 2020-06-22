@@ -8448,31 +8448,29 @@ html:not(.js) .header__nav-inner {
 }
 
 @use 'animation';
-.portfolio > * {
-  -webkit-animation-name: show;
-          animation-name: show;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-}
-
-.portfolio > :nth-child(even) .grid > :first-child {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-.portfolio > :nth-child(even) .grid > :last-child {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.portfolio > :first-child {
-  margin-top: 0;
-}
-
-.portfolio > :last-child {
-  margin-bottom: 0;
+@media only screen and (min-width: 1024px) {
+  .portfolio > * {
+    -webkit-animation-name: show;
+            animation-name: show;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+  }
+  .portfolio > :nth-child(even) .grid > :first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .portfolio > :nth-child(even) .grid > :last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 html {

@@ -1,22 +1,22 @@
 @use 'animation';
+@media only screen and (min-width: 1024px) {
+  .portfolio {
+    & > * {
+      animation-name: show;
+      animation-duration: 1.2s;
+    }
 
-.portfolio {
-  & > * {
-    animation-name: show;
-    animation-duration: 1.2s;
-  }
-
-  & > :nth-child(even) {
-    & .grid {
-      & > :first-child {
-        order: 2;
-      }
-      & > :last-child {
-        order: 1;
+    & > :nth-child(even) {
+      & .grid {
+        & > :first-child {
+          order: 2;
+        }
+        & > :last-child {
+          order: 1;
+        }
       }
     }
   }
-
   & > :first-child {
     margin-top: 0;
   }
